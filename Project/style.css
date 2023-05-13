@@ -1,0 +1,118 @@
+*{
+	padding: 0;
+	margin: 0;
+  	box-sizing: border-box;
+ 	font-family: "Poppins", sans-serif;
+}
+
+
+header{
+	
+    opacity: .8;
+    background-color: #e6eff3;
+    border-radius: 50px;
+    position: absolute;
+	width: 95%;
+	padding : 20px 30px;
+	display: flex;
+	justify-content: space-between;	
+    top : 3%;
+    left: 2.5%;
+    max-height: 80px;
+	position:fixed;
+    
+}
+.logo{
+
+    margin-top: -15px;
+    width: auto;
+    height: auto;
+}
+
+.navigation a{
+
+    opacity:1;
+    position: relative;
+    font-family: 'Franklin Gothic Medium';
+	color: #000000;
+	text-decoration: none;
+	margin-left: 20px;
+    margin-right: 20px;
+    font-size: auto;
+
+}
+
+
+.btnUser{
+   
+    
+    margin-top: -10px;
+	cursor: pointer;
+    border-radius: 100px;
+    border-width: 3px;
+    width: 45px;
+    height: 47px;
+}
+
+
+.navigation a::after{
+	content:'';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width :100%;
+	height: 3px;
+	background: rgb(0, 0, 0);
+	border-radius: 5px;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform .6s;
+}
+
+.navigation a:hover::after {
+	transform-origin: left;
+	transform: scale(1); 
+}
+
+
+.slideshow-container {
+	position: relative;
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+  }
+  
+  .slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 2s ease-in-out;
+  }
+  
+  .slide.active {
+	opacity: 1;
+  }
+  
+  .slide img {
+	width: 100%;
+	height: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
