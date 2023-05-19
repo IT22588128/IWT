@@ -9,26 +9,26 @@
 
 
 header{
-	opacity: .75;
+	opacity: 75%;
 	border-bottom-left-radius:50px ;
-	border-bottom-right-radius: 50px;
+	border-bottom-right-radius: 0;
     position: absolute;
-	width: 95%;
+	width: 75%;
 	padding : 20px 30px;
 	display: flex;
 	justify-content: space-between;	
     top : 0%;
-    left: 2.5%;
-
-	background: rgb(44, 44, 44);
+    right: 0px;
+	height: 14%;
+	background: #2a9662;
 	z-index: 1;
+	position: fixed;
     
 }
 .logo{
+	position: relative;
+	margin-left: 20px;
 
-    margin-top: -15px;
-    width: auto;
-    height: auto;
 }
 
 .navigation a{
@@ -82,10 +82,10 @@ header{
 	font-family:'Times New Roman', Times, serif;
 	font-size:90px;
 	text-align: center;
-	margin-top: 7%;
 	opacity: .1;
 	font-weight: 100;
-	
+	user-select: none;
+	margin-top: -50px;
 }
 
 #dis1
@@ -100,12 +100,12 @@ header{
 	margin-top: 5%;
 	color:  rgb(40, 40, 40);
 	font-style: italic;
-	
+	user-select: none;
 }
 
 
 .slideshow-container {
-	
+	border-radius: 10px;
 	position: relative;
 	width: 800px;
 	height: 500px;
@@ -138,7 +138,7 @@ header{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap ;
-	margin: 5% 5% 5% 5%;
+	margin: 5% 1.5% 5% 1.5%;
 	
 }
 .lands .l1 img
@@ -147,8 +147,8 @@ header{
 	padding: 20px;
 	display:flex;
 	justify-content:space-around ;
-	width: 350px;
-	height: 450px;
+	width: 400px;
+	height: 350px;
 	border-top-left-radius: 5%;
 	border-top-right-radius: 5%;
 	
@@ -173,6 +173,7 @@ header{
 
 .lands .l1:hover{
 	transform: scale(1.1);
+	
 	transition: 500ms;
 }
 
@@ -181,7 +182,7 @@ header{
 .lands .l1 span
 {
 	
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: 600;
 }
 
@@ -189,7 +190,7 @@ header{
 {
 	display: flex;
 	align-items: center;
-	font-size: 10px;
+	font-size: 13px;
 }
 
 .lands .l1 p img{
