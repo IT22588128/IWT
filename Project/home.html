@@ -8,11 +8,25 @@
     <link rel="stylesheet" href="home.css">
     <script src="home.js"></script>
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+    	
+    <header>
+        
+		<nav class="navigation">
+			<a href="#">Home</a>
+			<a href="#">Land</a>
+			<a href="#">About Us</a>
+			<a href="#">Contact</a>
+            <a href="#">News</a>
+            <a href="#">Sell Your Land</a>
+            <button class="btnUser"><img src ="src\user.svg" alt="user" width="30px" height="20px" ></button>
+		</nav>
     
+	</header>
+
 <a href="#srce" class="logo"  ><img src ="src\logo.png" alt="Logo" width="300px" height="150px" ></a>
 
     
@@ -56,22 +70,42 @@
           
       </div>
     
-</div>       
-		
-    <header>
-        
-		<nav class="navigation">
-			<a href="#">Home</a>
-			<a href="#">Land</a>
-			<a href="#">About Us</a>
-			<a href="#">Contact</a>
-            <a href="#">News</a>
-            <a href="#">Sell Your Land</a>
-            <button class="btnUser"><img src ="src\user.svg" alt="user" width="30px" height="20px" ></button>
-		</nav>
-    
-	</header>
 
+
+
+
+      
+      
+      <div class="searchBar"> 
+         <input id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="Search ...">
+         
+         <select id="city" onkeyup="search_animal()" title="CITY">
+            
+                <option value="">Select City</option>
+                <option value="wennappuwa">Wennappuwa</option>
+                <option value="malabe">Malabe</option>
+                <option value="nakkawatta">Nakkawatta</option>
+                <option value="kandy">Kandy</option>
+                <option value="hikkaduwa">Hikkaduwa</option>
+                <option value="gampaha">Gampaha</option>
+                <option value="nuwara Eliya">Nuwara Eliya</option>
+                <option value="kuliyapitiya">Kuliyapitiya</option>
+                <option value="kurunegala">Kurunegala</option>
+                <option value="kegalle">Kegalle</option>
+                <option value="matara">Matara</option>
+                <option value="kalutata">Kalutata</option>
+                <option value="polonnaruwa">Polonnaruwa</option>
+            </select>
+            <button onclick="search_animal()"  id="searchBtn">Search..</button>
+            
+        </div>
+
+        
+        
+        
+        
+        
+	
     <div class = lands>
         <div class = l1 >
             <div class = text>
@@ -79,42 +113,42 @@
             </div>
             <img src ="src\lnd1.webp"  width ='400px' hight = '800px'>
             <span>Center Point</span>
-            <p> <img src ="src\dollar.png"> LKR 110000 onward
-              <img src ="src\puzzle.png">Available blocks - 0 
-              <img src ="src\location.png">Hikkaduwa            </p>
+            <p> <img src ="src\dollar.png"> LKR 110000 onward</p>
+            <p> <img src ="src\puzzle.png">Available blocks - 0 </p>
+            <p> <img src ="src\location.png">Hikkaduwa            </p>
                 
         </div>
 
-        <div class = l1 >
-            <div class = text>
+        <div class = l1 ></p>
+            <div class = text></p>
                 <p>Available</p>
             </div>
             <img src ="src\lnd2.webp"  width ='400px' hight = '800px'>
             <span>Florence City</span>
-            <p> <img src ="src\dollar.png"> LKR 285000 onward 
-              <img src ="src\puzzle.png">Available blocks - 2
-              <img src ="src\location.png">Wennappuwa            </p>
+            <p> <img src ="src\dollar.png"> LKR 285000 onward </p>
+            <p> <img src ="src\puzzle.png">Available blocks - 2</p>
+            <p>  <img src ="src\location.png">Wennappuwa            </p>
         </div>
 
-        <div class = l1 id="srce" >
-            <div class = text>
+        <div class = l1 id="srce" ></p>
+            <div class = text></p>
                 <p>Available</p>
             </div>
             <img src ="src\lnd3.webp" width ='400px' hight = '800px'>
             <span>Crown City</span>
-            <p> <img src ="src\dollar.png"> LKR 166000 onward 
-              <img src ="src\puzzle.png">Available blocks - 0 
-              <img src ="src\location.png">Nakkawatta</p>
+            <p> <img src ="src\dollar.png"> LKR 166000 onward </p>
+            <p>     <img src ="src\puzzle.png">Available blocks - 0 </p>
+            <p>  <img src ="src\location.png">Nakkawatta</p>
         </div>
-        <div class = l1 id="srce" >
-            <div class = text>
+        <div class = l1 id="srce" ></p>
+            <div class = text></p>
                 <p>Available</p>
             </div>
             <img src ="src\lnd4.webp" width ='400px' hight = '800px'>
             <span>Crown City</span>
-            <p> <img src ="src\dollar.png"> LKR 166000 onward 
-              <img src ="src\puzzle.png">Available blocks - 0 
-              <img src ="src\location.png">Nakkawatta</p>
+            <p> <img src ="src\dollar.png"> LKR 166000 onward </p>
+            <p><img src ="src\puzzle.png">Available blocks - 0 </p>
+            <p>  <img src ="src\location.png">Nakkawatta</p>
         </div>
         <div class = l1 id="srce" >
             <div class = text style="background-color: rgb(255, 153, 1);">
@@ -122,17 +156,20 @@
             </div>
             <img src ="src\lnd5.webp" width ='400px' hight = '800px'>
             <span>Crown City</span>
-            <p> <img src ="src\dollar.png"> LKR 166000 onward 
-              <img src ="src\puzzle.png">Available blocks - 0 
-              <img src ="src\location.png">Nakkawatta</p>
+            <p> <img src ="src\dollar.png"> LKR 166000 onward </p>
+            <p>  <img src ="src\puzzle.png">Available blocks - 0 </p>
+            <p>  <img src ="src\location.png">Nakkawatta</p>
         </div>
     </div>
+
+
+
 
     <h1 id ="topic1">MOVE IN</h1>
         <h1 id ="dis1">Lands That Exceeds Your Expectations!</h1>
 
-    
-
-	
+   <br>
+   <br>
+        
 </body>
 </html>

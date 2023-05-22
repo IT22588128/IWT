@@ -5,11 +5,12 @@
   	box-sizing: border-box;
  	font-family: "Poppins", sans-serif;
 	scroll-behavior: smooth;
+	
 }
 
 
 header{
-	opacity: 75%;
+	opacity: 80%;
 	border-bottom-left-radius:50px ;
 	border-bottom-right-radius: 0;
     position: absolute;
@@ -19,10 +20,10 @@ header{
 	justify-content: space-between;	
     top : 0%;
     right: 0px;
-	height: 14%;
+	height: 12%;
 	background: #2a9662;
 	z-index: 1;
-	position: fixed;
+	/*position: fixed;*/
     
 }
 .logo{
@@ -68,12 +69,14 @@ header{
 	transform-origin: right;
 	transform: scaleX(0);
 	transition: transform .6s;
-	background: rgb(255, 123, 0);
+	background: rgb(20, 83, 39);
+	
 }
 
 .navigation a:hover::after {
 	transform-origin: left;
 	transform: scale(1); 
+
 }
 
 
@@ -82,7 +85,7 @@ header{
 	font-family:'Times New Roman', Times, serif;
 	font-size:90px;
 	text-align: center;
-	opacity: .1;
+	opacity: .2;
 	font-weight: 100;
 	user-select: none;
 	margin-top: -50px;
@@ -125,6 +128,8 @@ header{
   
   .slide.active {
 	opacity: 1;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
   }
   
   .slide img {
@@ -151,7 +156,8 @@ header{
 	height: 350px;
 	border-top-left-radius: 5%;
 	border-top-right-radius: 5%;
-	
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
 }
 .lands .l1 .text
 {
@@ -172,33 +178,99 @@ header{
 
 
 .lands .l1:hover{
-	transform: scale(1.1);
-	
-	transition: 500ms;
+	transform: scale( 1.01) ;
+	box-shadow: 0 0  20px #0f3b1d;
+	transition: 400ms;
+	border-radius: 25px;
+	text-align: center;
 }
 
 
-
-.lands .l1 span
-{
-	
+.lands .l1{
+	text-align: center;
 	font-size: 25px;
 	font-weight: 600;
+	box-shadow: 0 0 1px #0f3b1d;
+	margin-top: 20px;
+	transform-origin: left;
+	
 }
+
 
 .lands .l1 p 
 {
 	display: flex;
 	align-items: center;
 	font-size: 13px;
+
 }
 
 .lands .l1 p img{
-
+	margin-left: 30px;
 	font-size: 10px;
 	width: 45px;
 	height: 45px;
 	display: inline;
 	scale: 3;
+	
+}
 
+
+#para{
+	
+	font-size: x-large;
+}
+
+.searchBar
+{
+	border: none;
+	position:absolute;
+	margin-top: -150px;
+	margin-left: 80px;
+	z-index: 1;
+
+	
+	}
+
+#searchbar{
+	border-width: 8px;
+	width: 600px;
+	height: 100px;
+	border-radius: 50px;
+	font-size: x-large;
+	padding: 0px 0px 0px 20px ;
+	background-color: white;
+	border-color: #0f3b1d;
+	user-select: none;
+	overflow: hidden;
+}
+
+#searchBtn{
+	height: 70px;
+	width: 150px;
+	border: none;
+	background: #2a9662;
+	border-radius: 50px;
+	color: #f3f3f3;
+	font-size: larger;
+}
+
+#searchBtn:hover{
+	background-color: #1a6632;
+}
+#searchBtn:active{
+	background-color: #3e8e41;
+	box-shadow: 0 2px #666;
+	transform: translateY(2px);
+
+}
+
+#city{
+	width: 135px;
+	height: 50px;
+	border: none;
+	font-size: larger;
+	margin-left: -300px;
+	user-select: none;
+	text-align: center;
 }
